@@ -17,7 +17,6 @@ public class InputView {
 
     }
 
-
     public static int inputLadderHeight() {
         System.out.println(INPUT_HEIGHT_MESSAGE);
         scanner = new Scanner(System.in);

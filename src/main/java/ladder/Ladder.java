@@ -31,5 +31,4 @@ public class Ladder {
     public List<LadderLine> getLadder(){
         return Collections.unmodifiableList(ladder);
     }
-
 }

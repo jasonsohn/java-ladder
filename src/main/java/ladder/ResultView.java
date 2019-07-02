@@ -9,7 +9,7 @@ public class ResultView {
 
 
     public static void printResult(LadderGame ladderGame) {
-        System.out.println("실행결과");
+        System.out.println("실행 결과");
         for (String name : ladderGame.getPlayers()) {
             System.out.print(String.format("%5s ", name));
         }

@@ -60,7 +60,6 @@ public class LadderMainExample {
             System.out.println("|");
         }
 
-
     }
 
 }

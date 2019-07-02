@@ -11,7 +11,7 @@ public class Player {
 
     private String validationCheck(String playerName) {
         if (playerName.length() > MAX_NAME_LENGTH) {
-            throw new IllegalStateException("Player 이름은 5글자 이하여야 합니다.");
+            throw new IllegalStateException("Player의 이름은 5글자 이하여야 합니다.");
         }
         return playerName;
     }

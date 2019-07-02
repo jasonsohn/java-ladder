@@ -19,5 +19,4 @@ public class LadderGame {
     public List<String> getPlayers() {
         return players.getPlayerList();
     }
-
 }

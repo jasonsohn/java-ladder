@@ -14,7 +14,6 @@ public class LadderLine {
         this.ladderLine = lineGenerator(playersCount);
     }
 
-    // line 생성
     private List<Boolean> lineGenerator(int playersCount) {
         List<Boolean> lineMaterial = new ArrayList<>();
         lineMaterial.add(random.nextBoolean());
