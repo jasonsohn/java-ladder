@@ -3,6 +3,7 @@ package ladder;
 public class Player {
 
     private static final int MAX_NAME_LENGTH = 5;
+
     private String playerName;
 
     public Player(String playerName) {

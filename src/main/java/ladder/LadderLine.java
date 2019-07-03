@@ -1,16 +1,17 @@
 package ladder;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
 public class LadderLine {
 
+    private static final Random random = new Random();
+
     private List<Boolean> ladderLine;
-    private Random random;
 
     public LadderLine(int playersCount) {
-        this.random = new Random();
         this.ladderLine = lineGenerator(playersCount);
     }
 
@@ -32,6 +33,6 @@ public class LadderLine {
     }
 
     public List<Boolean> getLadderLine() {
-        return ladderLine;
+        return Collections.unmodifiableList(ladderLine);
     }
 }

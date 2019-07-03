@@ -1,7 +1,9 @@
 package ladder;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Players {
 
@@ -12,22 +14,18 @@ public class Players {
     }
 
     private List<Player> addPlayers(String playersNames) {
-        List<Player> players = new ArrayList<>();
-        for (String playerName : playersNames.split(",")) {
-            players.add(new Player(playerName));
-        }
-        return players;
+        return Arrays.stream(playersNames.split(","))
+                .map(playername -> new Player(playername))
+                .collect(Collectors.toList());
     }
 
     public int size() {
         return players.size();
     }
-//
+
     public List<String> getPlayerList() {
-        List<String> playerList = new ArrayList<>();
-        for (Player player : players) {
-            playerList.add(player.getPlayerName());
-        }
-        return playerList;
+        return players.stream()
+                .map(player -> player.getPlayerName())
+                .collect(Collectors.toList());
     }
 }
